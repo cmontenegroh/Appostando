@@ -1,50 +1,64 @@
-# Welcome to your Expo app 👋
+# 🏆 APPostando
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+**APPostando** es una aplicación móvil desarrollada con **React Native** y **Expo**, diseñada para ayudar a los usuarios a tomar decisiones más inteligentes al momento de apostar.  
+Permite comparar las cuotas de las casas de apuestas con las probabilidades estimadas por el propio usuario, calculando el **valor esperado (EV)** y el **margen del bookmaker**.
 
-## Get started
+---
 
-1. Install dependencies
+## 🚀 Características principales
 
-   ```bash
-   npm install
-   ```
+- 📱 Interfaz intuitiva con diseño limpio y moderno.  
+- 🧮 Calculadora de probabilidades ajustadas y valor esperado.  
+- 📊 Análisis de cuotas ingresadas por el usuario y por la casa.  
+- 💡 Muestra resultados formateados (por ejemplo, `+13%` de valor esperado).  
+- ⚙️ Desarrollada con Expo Router, React Navigation y componentes reutilizables.
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## 🧩 Tecnologías utilizadas
 
-In the output, you'll find options to open the app in a
+- [React Native](https://reactnative.dev/)
+- [Expo](https://expo.dev/)
+- [Expo Router](https://expo.github.io/router/docs)
+- [React Navigation](https://reactnavigation.org/)
+- [JavaScript / TypeScript (según la versión del proyecto)]
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 🧠 Cómo funciona la calculadora
 
-## Get a fresh project
+1. El usuario ingresa las **cuotas ofrecidas por la casa**.  
+2. También puede ingresar sus **propias estimaciones de probabilidad** (porcentaje de confianza en cada resultado).  
+3. El sistema calcula:
+   - **Probabilidad implícita** según la cuota.
+   - **Margen de la casa** (bookmaker margin).
+   - **Valor esperado (EV)** para cada opción.
 
-When you're ready, run:
+👉 Si el valor esperado es positivo (+%), la apuesta tiene **valor** según la estimación del usuario.
+
+---
+
+## 🛠️ Instalación y ejecución
+
+Clona este repositorio y ejecuta los siguientes comandos:
 
 ```bash
-npm run reset-project
-```
+# Clonar el proyecto
+git clone https://github.com/cmontenegroh/Appostando.git
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+# Entrar al directorio
+cd Appostando
 
-## Learn more
+# Instalar dependencias
+npm install
 
-To learn more about developing your project with Expo, look at the following resources:
+# Ejecutar la app
+npx expo start
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
 
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+📱 Próximas mejoras
+Guardar histórico de cálculos.
+Compartir análisis con amigos.
+Crear versión APK para testers (Android).
+Implementar modo oscuro.
+Integrar autenticación de usuarios.
